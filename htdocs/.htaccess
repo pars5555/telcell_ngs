@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^/?$ /dyn/main/main [L,QSA] 
+RewriteRule ^dyn(/.+)?/?$ /index1.php?_url=$1 [L,QSA]
