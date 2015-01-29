@@ -1,8 +1,7 @@
 ngs.LoadManager={
 	
   init: function(){
-   	this.urlObserver = ngs.UrlObserver.init();
-   	this.urlObserver.addListener(this.onUrlChange.bind(this));
+  
    	
   },
   
@@ -12,24 +11,17 @@ ngs.LoadManager={
   },
   
   initLoads: function(){
-  	var loadStr = this.urlObserver.getUrl();
-  	var loadObj = this.toObject(loadStr);
-		//this.runLoads(loadObj);  	
+  
   },
   
   setLoad: function(load){
-  
-  	var method = load.getMethod();
+    	var method = load.getMethod();
   	if(method.toUpperCase() == "POST"){
   		return;
-  	}
-  	var loadStr = this.urlObserver.getUrl();
-  	var loadObj = this.toObject(loadStr, load);
-  	var curLoads = this.computeObject(loadObj);
-  	var loads = ngs.DeepnessArranger.arrange(this.createObj(load), curLoads);
-	  var loadStr = this.toString(loads);
-	  loadStr = "/"+loadStr;
-	  this.urlObserver.setUrl(loadStr);
+  	}  	
+  	
+	
+	  
   },
   
   onUrlChange: function(oldLocation, location){
@@ -51,14 +43,7 @@ ngs.LoadManager={
 	  	}
 	  }
   },
-	
-	toString: function(obj){
-		return ngs.UrlFormater.toString(obj);
-	},
-	
-	toObject: function(str, loadObj){
-		return ngs.UrlFormater.toObject(str);
-	},
+		
 	computeObject: function(objs){
 		if(!objs){
   		return [];

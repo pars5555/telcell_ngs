@@ -10,7 +10,7 @@ require_once (CLASSES_PATH . "/framework/AbstractLoad.class.php");
 class HomeLoad extends AbstractLoad{
     
     public function load() {
-
+usleep(500000);
     }
 
     public function getTemplate() {

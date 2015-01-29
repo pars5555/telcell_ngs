@@ -39,13 +39,7 @@
         </output>
         <input>
             <files>
-                <file doc="true">ngs/util/AjaxLoader.class.js</file>
-                <file>ngs/util/DeepnessArranger.js</file>
-                <file>ngs/util/Navigator.class.js</file>
-                <file>ngs/util/UrlObserver.class.js</file>
-                <file>ngs/util/UrlFormater.class.js</file>
-                <file>ngs/util/crc32.js</file>
-                <file>ngs/util/UrlChangeEventObserver.class.js</file>
+                <file doc="true">ngs/util/AjaxLoader.class.js</file>               
             </files>
         </input >
     </builder>
@@ -62,16 +56,7 @@
                 <file>ngs/loads/main/MainLoad.class.js</file>
                 <file>ngs/loads/main/HomeLoad.class.js</file>
                 <file>ngs/loads/main/BeelineLoad.class.js</file>
-                <file>ngs/loads/main/OrangeLoad.class.js</file>
-                				
-                <file>ngs/loads/admin/AdminMainLoad.class.js</file>
-                <file>ngs/loads/admin/AdminHomeLoad.class.js</file>
-                <file>ngs/loads/admin/AdminDentistsLoad.class.js</file>
-                <file>ngs/loads/dentist/DentistMainLoad.class.js</file>
-                <file>ngs/loads/dentist/DentistHomeLoad.class.js</file>
-                <file>ngs/loads/dentist/DentistCalendarLoad.class.js</file>
-               
-                
+                <file>ngs/loads/main/OrangeLoad.class.js</file>   
             </files>
         </input>
     </builder>

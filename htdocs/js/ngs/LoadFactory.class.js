@@ -7,15 +7,7 @@ ngs.LoadFactory.prototype={
 		this.loads["home"] = function temp(){return new ngs.HomeLoad("home", ajaxLoader);};
 		this.loads["beeline"] = function temp(){return new ngs.BeelineLoad("beeline", ajaxLoader);};
 		this.loads["orange"] = function temp(){return new ngs.OrangeLoad("orange", ajaxLoader);};
-		
-		
-        //admin
-        this.loads["admin_main"] = function temp(){return new ngs.AdminMainLoad("admin_main", ajaxLoader);};
-		this.loads["admin_home"] = function temp(){return new ngs.AdminHomeLoad("admin_home", ajaxLoader);};
-		this.loads["user_main"] = function temp(){return new ngs.DentistMainLoad("user_main", ajaxLoader);};
-		this.loads["user_home"] = function temp(){return new ngs.DentistHomeLoad("user_home", ajaxLoader);};
-       
-      
+		      
 		},
 	
 	getLoad: function(name){

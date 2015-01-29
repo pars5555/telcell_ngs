@@ -10,6 +10,8 @@ require_once (CLASSES_PATH . "/framework/AbstractLoad.class.php");
 class BeelineLoad extends AbstractLoad {
 
     public function load() {
+        usleep(500000);
+        
         
     }
 
