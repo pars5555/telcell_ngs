@@ -15,10 +15,9 @@ ngs.BeelineLoad = Class.create(ngs.AbstractLoad, {
         return "beeline";
     },
     afterLoad: function () {
-        jQuery('#main_content_container').stop();
-        jQuery('#main_content_container').css({'opacity':'1'});
+        jQuery('#ajax-loader').css({display: 'none'});
         jQuery('#back_to_home').click(function () {
-            jQuery('#main_content_container').animate({opacity:'0'}, 500);
+            jQuery('#ajax-loader').css({display: 'block'});
             ngs.load('home', {});
         });
     }

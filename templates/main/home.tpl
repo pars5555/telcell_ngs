@@ -13,7 +13,7 @@
     </div>
 </div>
 <div class="home_content"> 
-    <embed style="visibility: hidden;position: fixed;z-index: -1000;margin-left: -10000" id="vlcp" type="application/x-vlc-plugin" name="VLC"  autoplay="yes" loop="no" volume="100" target="{$SITE_PATH}/audio/test.wav" src="{$SITE_PATH}/audio/test.wav"  >
+    {*}<embed style="visibility: hidden;position: fixed;z-index: -1000;margin-left: -10000" id="vlcp" type="application/x-vlc-plugin" name="VLC"  autoplay="yes" loop="no" volume="100" target="{$SITE_PATH}/audio/test.wav" src="{$SITE_PATH}/audio/test.wav"  >{*}
     <div class="table">
         <div class="row">
             <div class="cell">
