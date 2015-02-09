@@ -15,7 +15,7 @@ ngs.OrangeLoad = Class.create(ngs.AbstractLoad, {
         return "orange";
     },
     afterLoad: function() {
-         jQuery('#ajax-loader').css({display: 'none'});
+         jQuery('#screen-blocker').css({display: 'none'});
         
     }
 });

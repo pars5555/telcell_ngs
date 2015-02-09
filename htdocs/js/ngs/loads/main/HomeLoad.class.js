@@ -15,13 +15,13 @@ ngs.HomeLoad = Class.create(ngs.AbstractLoad, {
         return "home";
     },
     afterLoad: function () {
-        jQuery('#ajax-loader').css({display: 'none'});
+        jQuery('#screen-blocker').css({display: 'none'});
         jQuery('#beelineBtn').click(function () {
-            jQuery('#ajax-loader').css({display: 'block'});
+            jQuery('#screen-blocker').css({display: 'block'});
             ngs.load('beeline', {});
         });
         jQuery('#orangeBtn').click(function () {
-            jQuery('#ajax-loader').css({display: 'block'});
+            jQuery('#screen-blocker').css({display: 'block'});
             ngs.load('orange', {});
         });
         //var audio = new Audio(SITE_PATH + '/audio/test.wav');
